@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scam Detective — 網路詐騙偵探學院</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳至主要內容</a>
+
+  <header class="top-header">
+    <div class="header-inner">
+      <button type="button" class="brand-btn" data-nav="home" aria-label="返回 Scam Detective 首頁">
+        <span class="brand-badge" aria-hidden="true">🕵️</span>
+        <span>
+          <span class="brand-title">Scam Detective — 網路詐騙偵探學院</span>
+          <span class="brand-sub">Learn to Spot Scams Before They Spot You</span>
+        </span>
+      </button>
+      <div class="header-actions">
+        <button type="button" class="btn" data-nav="home">🏠 首頁</button>
+        <button type="button" class="btn btn-amber" id="open-sources-btn">📚 查看學術與 165 來源</button>
+      </div>
+    </div>
+
+    <nav class="unit-bar" aria-label="四大教學單元導覽">
+      <div class="unit-tabs" role="tablist">
+        <button type="button" class="unit-tab" role="tab" aria-selected="false" data-nav="unit1">
+          <span class="tab-num">Unit 01</span>
+          <span class="tab-name">偵探入院測驗 <span class="tab-status">○</span></span>
+        </button>
+        <button type="button" class="unit-tab" role="tab" aria-selected="false" data-nav="unit2">
+          <span class="tab-num">Unit 02</span>
+          <span class="tab-name">解剖心理陷阱 <span class="tab-status">○</span></span>
+        </button>
+        <button type="button" class="unit-tab" role="tab" aria-selected="false" data-nav="unit3">
+          <span class="tab-num">Unit 03</span>
+          <span class="tab-name">肉眼識破術 <span class="tab-status">○</span></span>
+        </button>
+        <button type="button" class="unit-tab" role="tab" aria-selected="false" data-nav="unit4">
+          <span class="tab-num">Unit 04</span>
+          <span class="tab-name">即時情境測驗 <span class="tab-status">○</span></span>
+        </button>
+      </div>
+      <div class="progress-wrap">
+        <span id="global-progress-text">學院任務進度：0%（已完成 0 / 4 單元）</span>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="global-progress-fill"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="main-container">
+    <!-- HOME VIEW -->
+    <section id="view-home" class="view-panel active" aria-labelledby="home-heading">
+      <div class="hero-card">
+        <div>
+          <span class="eyebrow">互動式認知防禦學院 ・ 5 篇經典論文 × 台灣 165 官方實證</span>
+          <h1 id="home-heading">Scam Detective — 網路詐騙偵探學院</h1>
+          <p class="hero-subtitle">Learn to Spot Scams Before They Spot You</p>
+          <p class="hero-desc">
+            你以為自己一眼就能識破假網站與詐騙訊息嗎？本學院整合五篇國際經典資安與心理學研究，以及內政部警政署 165、數位發展部與金管會官方防詐指引，帶你透過四個偵探任務拆解詐騙者的心理陷阱與偽裝破綻。
+          </p>
+          <div class="hero-cta">
+            <button type="button" class="btn btn-primary" id="start-learning-btn" data-nav="unit1">🚀 開始學習（進入 Unit 01）</button>
+            <button type="button" class="btn" data-nav="unit4">🎯 直接挑戰 8 題情境測驗</button>
+          </div>
+        </div>
+        <div class="hero-visual-grid" aria-label="常見詐騙案件視覺導覽">
+          <div class="hero-thumb"><img src="../assets/01_phishing_sms.png" alt="釣魚簡訊示意圖" /><span>釣魚簡訊 Smishing</span></div>
+          <div class="hero-thumb"><img src="../assets/02_fake_website.png" alt="偽冒網站示意圖" /><span>假網站視覺欺騙</span></div>
+          <div class="hero-thumb"><img src="../assets/03_investment_scam.png" alt="假投資詐騙示意圖" /><span>假投資群組陷阱</span></div>
+          <div class="hero-thumb"><img src="../assets/04_social_engineering.png" alt="社交工程示意圖" /><span>心理說服與情感養成</span></div>
+        </div>
+      </div>
+
+      <div class="mission-grid">
+        <article class="mission-card">
+          <div>
+            <span class="mission-tag">UNIT 01 ・ 入院快篩</span>
+            <h3>偵探入院測驗</h3>
+            <p>破除直覺自信，認識視覺欺騙、有限注意力與跨研究年齡差異。</p>
+          </div>
+          <button type="button" class="btn" data-nav="unit1">進入任務 →</button>
+        </article>
+        <article class="mission-card">
+          <div>
+            <span class="mission-tag">UNIT 02 ・ 心理剖析</span>
+            <h3>解剖心理陷阱</h3>
+            <p>點擊剖析五大說服原則，走進愛情詐騙時間軸與台灣假交友投資手法。</p>
+          </div>
+          <button type="button" class="btn" data-nav="unit2">進入任務 →</button>
+        </article>
+        <article class="mission-card">
+          <div>
+            <span class="mission-tag">UNIT 03 ・ 現場勘驗</span>
+            <h3>肉眼識破術</h3>
+            <p>拿起偵探放大鏡檢驗虛構銀行頁，學會網域判讀、HTTPS 邊界與官方查證。</p>
+          </div>
+          <button type="button" class="btn" data-nav="unit3">進入任務 →</button>
+        </article>
+        <article class="mission-card">
+          <div>
+            <span class="mission-tag">UNIT 04 ・ 實戰驗收</span>
+            <h3>即時情境測驗</h3>
+            <p>8 題台灣生活情境挑戰，透過「可教時刻」即時解析取得防詐偵探稱號。</p>
+          </div>
+          <button type="button" class="btn" data-nav="unit4">進入任務 →</button>
+        </article>
+      </div>
+
+      <div class="source-footnote">
+        <strong>知識純度聲明：</strong>本簡報所有內容皆提煉自 <code>wiki/syntheses/teaching-evidence-map.md</code> 中標記為 <code>verification_status: verified</code> 之頁面，不包含任何未驗證（pending）推論；圖片素材僅作教學視覺輔助，非研究證據。
+      </div>
+    </section>
+
+    <!-- UNIT 1 -->
+    <section id="view-unit1" class="view-panel" aria-labelledby="u1-heading" aria-hidden="true">
+      <div class="unit-header">
+        <div>
+          <span class="eyebrow">Unit 01 ・ 偵探入院測驗</span>
+          <h2 id="u1-heading">你真的能一眼看穿詐騙嗎？</h2>
+          <p class="unit-lead">許多人認為「自己很懂網路、不會上當」，但經典研究顯示，人類的直覺與注意力盲點正是釣魚攻擊的突破口。</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🧪 互動任務：你最信任哪一個網站安全訊號？</h3>
+        <div class="grid-2" style="align-items:center;">
+          <div>
+            <img src="../assets/02_fake_website.png" alt="偽冒網站外觀觀察示意圖" class="case-img" />
+            <p class="img-caption">※ 教學情境示意圖（非實驗原圖）</p>
+          </div>
+          <div>
+            <p style="margin-top:0;">請從下方四個選項中，點擊<strong>你平常最容易用來判斷「這網站是真的」</strong>的訊號，立刻看看研究結果怎麼說：</p>
+            <div id="u1-options" class="option-list"></div>
+          </div>
+        </div>
+        <div id="u1-feedback" class="feedback-box" aria-live="polite"></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>🔬 關鍵實驗數據（附嚴格研究邊界）</h3>
+          <ul>
+            <li><strong>單一最逼真仿冒網站（Dhamija 2006, n=22）</strong>：仿冒 Bank of the West 的網頁讓 <strong>90.9%（20/22 人）</strong>誤判。<br/><span style="font-size:0.84rem;color:var(--text-muted);">⚠️ 邊界：僅限該特定高品質仿冒頁的 22 人實驗室結果，不可泛化為所有釣魚網站成功率。</span></li>
+            <li><strong>23%（5/22 人）</strong>完全不看瀏覽器網址列與安全指標，只靠網頁外觀判斷；全體 22 人平均辨識錯誤率約 <strong>40%</strong>。</li>
+            <li><strong>68%（15/22 人）</strong>在特定自簽 SSL 憑證警告情境下直接點「確定」略過。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>⚖️ 跨研究結果差異：年輕人比較不會被騙嗎？</h3>
+          <p style="margin-top:0;">兩篇研究對「年齡與釣魚易受騙性」有不同結果（屬<strong>跨研究結果差異</strong>，而非直接矛盾）：</p>
+          <ul>
+            <li><strong>Dhamija (2006)</strong>：n=22 實驗室測驗，未觀察到年齡顯著關聯（p=.772，小樣本統計效力有限）。</li>
+            <li><strong>Kumaraguru (2009)</strong>：CMU 校園 515 人 28 天真實收信實驗（後測年齡 N=267），<strong>18–25 歲組</strong>在所有測試日均顯著更易誤點（Day 0 達 <strong>62.3%</strong>），且資工系（48.2%）未顯著優於他系。</li>
+          </ul>
+          <div class="callout warn" style="margin-bottom:0;">
+            兩篇樣本與場域不同，不可強推一般人口定論，但足以打破「年輕／理工背景＝免疫」的過度自信。
+          </div>
+        </div>
+      </div>
+
+      <div class="unit-nav-footer">
+        <button type="button" class="btn" data-step="prev">← 返回首頁</button>
+        <button type="button" class="btn btn-primary" data-step="next">前往 Unit 02：解剖心理陷阱 →</button>
+      </div>
+      <div class="source-footnote">
+        學術與 Wiki 出處：Dhamija, Tygar &amp; Hearst (2006, PDF p.1, 3, 5, 7, 9)｜Kumaraguru et al. (2009, PDF p.3, 8–10)｜<code>wiki/papers/Dhamija2006.md</code>、<code>wiki/syntheses/anti-phishing-defenses-and-divergences.md</code>
+      </div>
+    </section>
+
+    <!-- UNIT 2 -->
+    <section id="view-unit2" class="view-panel" aria-labelledby="u2-heading" aria-hidden="true">
+      <div class="unit-header">
+        <div>
+          <span class="eyebrow">Unit 02 ・ 解剖心理陷阱</span>
+          <h2 id="u2-heading">詐騙者如何一步一步取得你的信任？</h2>
+          <p class="unit-lead">不要只靠找錯字！詐騙訊息常同時按下多個心理按鈕，而在網路交友詐騙中，犯罪者更願意花上數月進行長期情感養成。</p>
+        </div>
+      </div>
+
+      <!-- Lab 2A -->
+      <div class="card">
+        <h3>🔎 互動實驗 A：點擊可疑訊息中的 5 個心理陷阱線索</h3>
+        <p style="margin-top:0;color:var(--text-muted);">以下是一則<strong>教學模擬訊息</strong>。請點擊畫有虛線框的紅旗片段，逐一辨識 Ferreira et al. (2015) 整合的五大說服原則（<span id="u2-clue-count">已解剖線索：0 / 5</span>）：</p>
+        <div class="grid-2" style="align-items:start;">
+          <div class="mock-message" aria-label="模擬可疑釣魚郵件">
+            <div class="mock-msg-header">
+              <strong>寄件人：</strong>security-audit@notice-alert.example<br/>
+              <strong>主旨：</strong>緊急帳戶安全補登通知（教學模擬）
+            </div>
+            <p style="margin:0;">
+              <button type="button" class="clue-chip" data-clue-id="clue_auth">【中央銀行資安稽核部】</button>
+              正式通知：<button type="button" class="clue-chip" data-clue-id="clue_lsd">親愛的本校師生老朋友您好，我是之前協助您開戶的林專員</button>。
+              系統偵測到您的帳戶異常，<button type="button" class="clue-chip" data-clue-id="clue_crc">我們已先為您免費升級 VIP 防護，請配合完成最後一步回報</button>。
+              <button type="button" class="clue-chip" data-clue-id="clue_sp">目前已有 98% 用戶完成線上補登</button>，若於
+              <button type="button" class="clue-chip" data-clue-id="clue_dis">2 小時內未完成驗證將永久凍結帳戶並扣除違約金</button>。
+            </p>
+          </div>
+          <div>
+            <img src="../assets/04_social_engineering.png" alt="社交工程心理操縱示意圖" class="case-img" />
+            <div class="callout warn">
+              <strong>⚠️ 證據界線提醒：</strong>Ferreira et al. (2015) 分析 52 封英文釣魚郵件，觀察到 LSD 與 DIS 最常出現且原則常組合出現；但<strong>出現頻率不等於詐騙成功率</strong>，多原則同現亦未經實驗證明效果更強。
+            </div>
+          </div>
+        </div>
+        <div id="u2-clue-feedback" class="feedback-box" aria-live="polite"></div>
+      </div>
+
+      <!-- Lab 2B -->
+      <div class="card">
+        <h3>💔 互動實驗 B：愛情詐騙與「假交友結合投資」時間軸</h3>
+        <p style="margin-top:0;color:var(--text-muted);">
+          Whitty (2013) 透過 20 名受害者質性訪談歸納七階段模型（⚠️ 屬質性歸納框架，<strong>並非所有受害者都會走完每個階段</strong>；Near-Win、認知失調與心流屬作者理論詮釋，非因果實驗驗證）。請切換階段並在關鍵時刻做出選擇：
+        </p>
+        <div class="grid-2" style="align-items:start;">
+          <div>
+            <div id="u2-timeline-pills" class="timeline-steps"></div>
+            <div id="u2-timeline-stage" style="background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius-md);padding:1rem;"></div>
+          </div>
+          <div>
+            <img src="../assets/03_investment_scam.png" alt="假投資與假交友投資詐騙示意圖" class="case-img" />
+            <div class="callout" style="margin-top:0.75rem;">
+              <strong>🏛️ 台灣 165 打詐儀錶板在地觀察：</strong>台灣高發「假交友結合投資」手法，常結合長期情感養成（Grooming）與「初期小額出金、後期以保證金／稅金拒出金」的假投資平台。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit-nav-footer">
+        <button type="button" class="btn" data-step="prev">← 上一單元：偵探入院測驗</button>
+        <button type="button" class="btn btn-primary" data-step="next">前往 Unit 03：肉眼識破術 →</button>
+      </div>
+      <div class="source-footnote">
+        學術與官方出處：Ferreira, Coventry &amp; Lenzini (2015, PDF p.4–5, 8–10)｜Whitty (2013, PDF p.19–32)｜165 打詐儀錶板、165 全民防騙網｜<code>wiki/papers/Ferreira2015.md</code>、<code>wiki/papers/Whitty2013.md</code>
+      </div>
+    </section>
+
+    <!-- UNIT 3 -->
+    <section id="view-unit3" class="view-panel" aria-labelledby="u3-heading" aria-hidden="true">
+      <div class="unit-header">
+        <div>
+          <span class="eyebrow">Unit 03 ・ 肉眼識破術</span>
+          <h2 id="u3-heading">網站看起來很真，就一定是真的嗎？</h2>
+          <p class="unit-lead">以下為<strong>虛構品牌（SafeTrust Demo Bank）的教學模擬頁面</strong>（不蒐集任何真實密碼）。請點擊畫面中 4 個虛線標記，揪出偽冒網站的破綻！</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🔍 互動勘驗：虛構銀行網站偵探放大鏡（<span id="u3-hotspot-count">已揪出可疑訊號：0 / 4</span>）</h3>
+        <div class="mock-browser" aria-label="虛構銀行網站教學模擬介面">
+          <div class="mock-chrome">
+            <div class="chrome-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="mock-url-bar">
+              <button type="button" class="hotspot-btn" data-hotspot-id="hs_https">🔒 https://</button>
+              <button type="button" class="hotspot-btn" data-hotspot-id="hs_domain">safetrust-demo-login.verify-account.example/login</button>
+            </div>
+            <button type="button" class="hotspot-btn" data-hotspot-id="hs_blacklist">🛡️ 瀏覽器無警告</button>
+          </div>
+          <div class="mock-page-body">
+            <div>
+              <span class="pill-badge" style="margin-bottom:0.5rem;">教學模擬情境 ・ 虛構品牌</span>
+              <h4 style="margin:0.25rem 0 0.5rem;font-size:1.15rem;">🏦 SafeTrust Demo Bank 網路銀行</h4>
+              <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 0.75rem;">
+                頁面設計精美、附有防毒安全圖章，但請別只憑外觀判斷！
+              </p>
+              <button type="button" class="hotspot-btn" data-hotspot-id="hs_search">🔎 搜尋引擎比對查證原則</button>
+            </div>
+            <div class="fake-form-box" aria-label="非互動示意表單（不蒐集個資）">
+              <div style="font-size:0.84rem;font-weight:700;margin-bottom:0.5rem;color:var(--accent-amber);">※ 教學示意欄位（停用輸入，不蒐集任何密碼）</div>
+              <div class="fake-input-placeholder">帳號（示範用，不可輸入）</div>
+              <div class="fake-input-placeholder">密碼／OTP（示範用，不可輸入）</div>
+              <div style="font-size:0.78rem;color:var(--accent-emerald);">🔒 網頁內文假鎖頭：100% 安全認證（任何人都能貼圖！）</div>
+            </div>
+          </div>
+        </div>
+        <div id="u3-hotspot-feedback" class="feedback-box" aria-live="polite"></div>
+      </div>
+
+      <div class="card">
+        <h3>📋 完整 5 步驟網站與官方查證 SOP</h3>
+        <div class="grid-2" style="align-items:center;">
+          <ol style="margin:0;padding-left:1.25rem;display:grid;gap:0.45rem;">
+            <li><strong>看 Registered Domain</strong>：看 `.com`、`.tw`、`.gov.tw` 左邊緊鄰那一段主網域，不被子網域迷惑（Dhamija 2006）。</li>
+            <li><strong>不信外觀與鎖頭</strong>：HTTPS 只代表加密，不證明網站合法；網頁內文鎖頭更可隨意偽造（Dhamija 2006）。</li>
+            <li><strong>不迷信無瀏覽器警告</strong>：新釣魚站常只存活數小時，黑名單存在時間差（Zhang 2007；Kumaraguru 2009）。</li>
+            <li><strong>敏感操作優先手動輸入官方網址或用官方 App</strong>：搜尋引擎比對僅能作輔助檢查，搜尋排名與廣告不能單獨證明合法（Zhang 2007）。</li>
+            <li><strong>善用台灣官方查證管道</strong>：政府簡訊認明 <strong>111</strong>、官網結尾 <strong>.gov.tw</strong>；可至 <strong>165 全民防騙網</strong>、<strong>數發部網路詐騙通報查詢網</strong>、<strong>金管會官網</strong>查詢業者與涉詐網址。</li>
+          </ol>
+          <div>
+            <img src="../assets/05_malware.png" alt="惡意連結與不明 App 警示示意圖" class="case-img" />
+            <p class="img-caption">※ 提醒：Zhang (2007) CANTINA 之 89%–97% 指標限 2006–2007 英文實驗集，不可轉化為現代通用風險分數。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit-nav-footer">
+        <button type="button" class="btn" data-step="prev">← 上一單元：解剖心理陷阱</button>
+        <button type="button" class="btn btn-primary" data-step="next">前往 Unit 04：8 題即時情境測驗 →</button>
+      </div>
+      <div class="source-footnote">
+        學術與官方出處：Dhamija et al. (2006, PDF p.2–3, 9)｜Zhang, Hong &amp; Cranor (2007, PDF p.4, 7–9)｜165 全民防騙網、數發部、金管會｜<code>wiki/tasks/check-website-legitimacy.md</code>
+      </div>
+    </section>
+
+    <!-- UNIT 4 -->
+    <section id="view-unit4" class="view-panel" aria-labelledby="u4-heading" aria-hidden="true">
+      <div class="unit-header">
+        <div>
+          <span class="eyebrow">Unit 04 ・ 即時情境測驗（可教時刻演練）</span>
+          <h2 id="u4-heading">現在換你當防詐偵探（8 題綜合挑戰）</h2>
+          <p class="unit-lead">基於 Kumaraguru et al. (2009) 的嵌入式「可教時刻」訓練原理：每題答題後立即獲得研究與台灣官方解析，完賽後依錯題類型提供學習建議。</p>
+        </div>
+      </div>
+
+      <div class="card" id="quiz-stage" aria-live="polite">
+        <!-- Rendered by js/quiz.js -->
+      </div>
+
+      <div class="unit-nav-footer">
+        <button type="button" class="btn" data-step="prev">← 上一單元：肉眼識破術</button>
+        <button type="button" class="btn" data-nav="home">🏠 返回學院首頁</button>
+      </div>
+      <div class="source-footnote">
+        學術與官方出處：Kumaraguru et al. (2009, PDF p.1, 8–10；Day 0 誤點子樣本 Day 28 點擊率單次組 27.0% vs. 控制組 54.4%，二次強化壓低輸入個資率至 14.7%)｜前述四篇論文＋165／數發部／金管會官方來源｜<code>wiki/syntheses/teaching-evidence-map.md</code>
+      </div>
+    </section>
+  </main>
+
+  <!-- SOURCES MODAL -->
+  <div id="sources-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sources-modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="sources-modal-title" style="margin:0;">📚 學術論文與台灣官方來源總覽（全數 Verified）</h3>
+        <button type="button" class="btn" id="close-sources-btn" aria-label="關閉來源視窗">✕ 關閉</button>
+      </div>
+      <p style="margin-top:0;font-size:0.88rem;color:var(--text-muted);">
+        本簡報所有內容皆可追溯至下列已驗證 Wiki 頁面、原始 PDF 頁碼與 2026-11-23 實測可連線之台灣官方網站。
+      </p>
+      <table class="source-table">
+        <thead>
+          <tr><th>類別</th><th>來源名稱與頁碼／查閱日</th><th>Wiki 路徑與外部連結</th></tr>
+        </thead>
+        <tbody id="sources-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
